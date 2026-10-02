@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drill 3</title>
+</head>
+<body>
+    <input type="text" id="cust-name">
+    <button type="button" id="greet-btn">Greet</button>
+    <p id="greeting"></p>
+
+    <script>
+        const greetButton = document.getElementById("greet-btn");
+
+        greetButton.addEventListener("click", function ()
+        {
+            const typed = document.getElementById("cust-name").value;
+            const customerName = typed.trim();
+
+            let message = "Welcome to Poshtik Campus, " + customerName + "!";
+
+            if (customerName === "")
+            {
+                message = "Please type your name first.";
+            }
+
+            document.getElementById("greeting").textContent = message;
+            console.log("name: [" + customerName + "]");
+        });
+    </script>
+</body>
+</html>

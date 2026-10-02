@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samagra Kutumba Survey</title>
+</head>
+<body>
+    <h1>Household Survey</h1>
+
+    <form>
+        <p>
+            <label for="head">Head of family</label>
+            <input type="text" id="head" name="head">
+        </p>
+
+        <p>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+
+        <p>
+            <label for="members">Family members</label>
+            <input type="number" id="members" name="members" min="1">
+        </p>
+
+        <fieldset>
+            <legend>House type</legend>
+
+            <input type="radio" id="own" name="housetype" value="own">
+            <label for="own">Own</label>
+
+            <input type="radio" id="rented" name="housetype" value="rented">
+            <label for="rented">Rented</label>
+
+            <input type="radio" id="other" name="housetype" value="other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <p>
+            <label for="remarks">Remarks</label>
+            <textarea id="remarks" name="remarks" rows="3"></textarea>
+        </p>
+
+        <button type="submit">Submit survey</button>
+    </form>
+</body>
+</html>
